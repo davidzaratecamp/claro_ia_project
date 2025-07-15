@@ -1,5 +1,4 @@
 // src/config/db.js
-require('dotenv').config();
 const mysql = require('mysql2/promise'); // Usar la versión promise
 
 const pool = mysql.createPool({
