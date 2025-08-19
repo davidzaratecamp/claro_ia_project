@@ -1,4 +1,5 @@
 // src/routes/twilioRoutes.js
+//Este es el route desde donde se maneja toda la logica para generar la llamada desde Twilio.
 const express = require('express');
 const VoiceResponse = require('twilio').twiml.VoiceResponse;
 const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);

@@ -19,7 +19,7 @@ async function getAIResponse(prompt, userData = {}) {
     // Detectar si el cliente está saludando
     const saludoCliente = /hola|buenos días|buenas tardes|buenas noches|qué tal|como estás|como esta/i.test(prompt);
 
-    // Saludo personalizado si aplica
+    // Saludo personalizado si aplica en este caso
     const saludoInicial = saludoCliente && userData.nombre
         ? `Hola ${userData.nombre}, `
         : '';
