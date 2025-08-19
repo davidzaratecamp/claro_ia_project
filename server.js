@@ -10,6 +10,7 @@ app.use(express.json());
 // ¡IMPORTANTE para Twilio! Twilio envía datos en formato URL-encoded
 app.use(express.urlencoded({ extended: true })); // <-- ¡Asegúrate de que esta línea esté presente!
 
+//Base de datos
 // Ruta de prueba para verificar conexión a la DB
 app.get('/api/clientes', async (req, res) => {
     try {
